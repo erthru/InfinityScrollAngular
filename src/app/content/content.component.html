@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <div *ngFor="let user of users">
+      <div class="row">
+        <div class="col-md-1">
+          <img src="{{user.avatar}}" width="80" height="80">
+        </div>
+        <div class="col-md-11" style="margin-top:4px">
+          <h6>{{user.last_name}}, {{user.first_name}}</h6>
+          <label>{{user.email}}</label>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
